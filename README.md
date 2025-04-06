@@ -1,1 +1,1 @@
-# Covid-19-Death-Report-
+Creating  a comprehensive report that calculates and visualizes the total number of COVID-19 related deaths by country and Performing  a detailed analysis of COVID-19 death rates by country, focusing on the Case Fatality Rate (CFR) — calculated as the number of deaths per confirmed cases
