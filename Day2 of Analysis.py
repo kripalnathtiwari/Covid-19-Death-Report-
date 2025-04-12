@@ -26,20 +26,16 @@ plt.show()
 
 
 #OBJECTIVE 4   [Global New Deaths Trend Over Time]
-#
-#
-#
-# df["Date_reported"] = pd.to_datetime(df["Date_reported"])
-#
-# # Group by date and sum new deaths to see global trends
-# daily_deaths = df.groupby("Date_reported")["New_deaths"].sum()
-#
-# # Plot trends in new deaths
-# plt.figure(figsize=(12, 5))
-# sns.lineplot(x=daily_deaths.index, y=daily_deaths.values, color="red")
-# plt.title("Global New Deaths Trend Over Time")
-# plt.xlabel("Date")
-# plt.ylabel("New Deaths")
-# plt.xticks(rotation=45)
-# plt.grid(True)
-# plt.show()
+
+df["Date_reported"] = pd.to_datetime(df["Date_reported"])
+# Group by date and sum new deaths to see global trends
+daily_deaths = df.groupby("Date_reported")["New_deaths"].sum()
+# Plot trends in new deaths
+plt.figure(figsize=(12, 5))
+sns.lineplot(x=daily_deaths.index, y=daily_deaths.values, color="red")
+plt.title("Global New Deaths Trend Over Time")
+plt.xlabel("Date")
+plt.ylabel("New Deaths")
+plt.xticks(rotation=45)
+plt.grid(True)
+plt.show()
